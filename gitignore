@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+Notebook/
+
+# ML model files
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Data folders
+data/
+datasets/
+models/
+outputs/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
