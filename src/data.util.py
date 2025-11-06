@@ -2,12 +2,12 @@ import tensorflow as tf
 
 AUTOTUNE = tf.data.AUTOTUNE
 
-def get_datasetV2(
+def get_dataset(
         data_path,
         image_size=(150,150),
-        batch_size=32,
-        val_split=0.20,
-        label_mode="binary",
+        batch_size=64,
+        val_split=0.30,
+        label_mode="categorical",
         shuffle_buffer_size=1000,
         training_cache_path=None,
         validation_cache_path=None,
