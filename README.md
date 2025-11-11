@@ -1,5 +1,5 @@
 
-# Project: Tiny ImageNet CNN – From Scratch, Design to Deployment
+# Project: Tiny ImageNet CNN – From Scratch, Design to Cloud Deployment
 
 ## Introduction
 
