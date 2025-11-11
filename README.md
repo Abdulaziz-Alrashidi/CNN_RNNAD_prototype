@@ -32,7 +32,7 @@ src/
 ## Model Architecture
 
 The detailed architecture and design rationale are available in `architecture.txt`.
-The final model is pretraining_model_prototype_4.py which is avalibe in `prototypes/`
+The final model is `pretraining_model_prototype_4.py` which is avalibe in `prototypes/`
 
 Model Architecture Overview
 
