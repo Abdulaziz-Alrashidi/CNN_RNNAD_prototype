@@ -152,7 +152,7 @@ train, val = get_dataset(DATA_PATH, image_size=(64,64), batch_size=64)
 python src/model_training.py
 ```
 
-> **Note:** The training module is self-contained; it includes data loading, model definition, and training in one script.
+ **Note:** The training module is self-contained; it includes data loading, model definition, and training in one script.
 
 ---
 
