@@ -33,22 +33,20 @@ src/
 
 ## Model Architecture
 
-The detailed architecture and design rationale are available in `architecture.txt`.
-The final model is `pretraining_model_prototype_4.py` which is avalibe in `prototypes/`
 
-Model Architecture Overview
+This architectural design was driven by the goal of creating a model that is lightweight, stable, and capable of extracting meaningful information from small inputs while remaining conservative with information. The following design decisions were made:
 
-A lightweight CNN designed for 64×64 images, balancing efficiency and stability.
+**Block 1:** Small filter size (2×2) was used to capture fine details from the input (64×64). While 3×3 filters are standard, they are better suited for larger inputs. Using smaller filters keeps the model lighter, which is crucial for a deep network. Batch normalization and LeakyReLU were applied to stabilize training. Average pooling was used instead of max pooling to maximize information preservation. Convolutional layers were padded to prevent shrinking of feature maps through multiple layers.
 
-Feature Extraction: 2×2 convolutions, LeakyReLU, batch norm, average pooling.
+**Block 2:** Mild Spatial Dropout was introduced to help prevent overfitting. Bottleneck design (compress-expand) was used to efficiently extract features while keeping the network lightweight. No activation was applied immediately after the 1×1 compression layer to preserve the linearity of the compressed features. Applying a non-linearity at this stage could distort the linearly compressed information, reducing the effectiveness of the subsequent 3×3 convolution. After the 3×3 convolution, activations were applied during expansion to break linearity and improve feature representation.
 
-Bottleneck Layers: 1×1 compress + 3×3 expand, spatial dropout for regularization.
+**Block 3:** Follows the same bottleneck principle as Block 2. The receptive field increases progressively and reaches ~60×60 by the end of Block 3, covering almost the entire input.
 
-Deeper Features: Expanded receptive field for rich representation.
+**Block 4:** Global Average Pooling is used to reduce the number of parameters and summarize spatial information. Dropout (35%) is applied to further reduce overfitting risk.
 
-Classification: Global average pooling → dense layers with dropout.
+---
 
-Batch normalization and LeakyReLU throughout ensure stable training and efficient deployment.
+
 
 ---
 
