@@ -95,7 +95,7 @@ import json
 url = "http://3.28.60.161:5000/predict"
 
 # 2. Load and encode the image
-with open("your_image.jpg", "rb") as f:
+with open("your_image_path.jpg", "rb") as f:
     img_base64 = base64.b64encode(f.read()).decode("utf-8")
 
 # 3. Create the payload
