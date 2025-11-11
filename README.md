@@ -1,17 +1,17 @@
 
-# **Project: Tiny ImageNet CNN – From Scratch, Design to Deployment**
+# Project: Tiny ImageNet CNN – From Scratch, Design to Deployment
 
-## **Introduction**
+## Introduction
 
 This project demonstrates the end-to-end engineering of a convolutional neural network (CNN) trained from scratch on the Tiny ImageNet dataset, which consists of 200 classes with 64×64 images.
 
-The primary goal is **not** to achieve state-of-the-art performance—transfer learning can achieve higher accuracy. Instead, this project focuses on **practical engineering**: from data preprocessing, model design, and experimentation, to deployment on AWS.
+The primary goal is **not** to achieve state-of-the-art performance, transfer learning can achieve higher accuracy. Instead, this project focuses on **practical engineering**: from data preprocessing, model design, and experimentation, to deployment on AWS.
 
 The current trained model achieves a **validation accuracy of ~42%**, which is consistent with models trained from scratch on Tiny ImageNet. Further experimentation is ongoing, and validation accuracy will be updated as improvements are made.
 
 ---
 
-## **Folder Structure**
+## Folder Structure
 
 ```
 requirements.txt           # Project dependencies
@@ -29,7 +29,7 @@ src/
 
 ---
 
-## **Model Architecture**
+## Model Architecture
 
 The detailed architecture and design rationale are available in `architecture.txt`.
 The final model is pretraining_model_prototype_4.py which is avalibe in `prototypes/`
@@ -50,7 +50,7 @@ Batch normalization and LeakyReLU throughout ensure stable training and efficien
 
 ---
 
-## **API Usage**
+## API Usage
 
 The trained model is deployed as a REST API using Flask.
 
@@ -60,7 +60,7 @@ The trained model is deployed as a REST API using Flask.
 POST http://3.28.60.161:5000/predict
 ```
 
-**Request Body:**
+Request Body:
 
 * JSON format
 * Image must be base64-encoded
@@ -113,7 +113,7 @@ print(response.json())
 
 
 
-## **Setup & Installation**
+## Setup & Installation
 
 ### **1. Training Setup**
 
