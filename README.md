@@ -11,6 +11,8 @@ For these reasons, the primary goal is **not** to achieve state-of-the-art perfo
 
 The current trained model achieves a **validation accuracy of ~42%**, which is consistent with models trained from scratch on Tiny ImageNet. Further experimentation is ongoing, and validation accuracy will be updated as improvements are made.
 
+The model was trained on an NVIDIA RTX 2080 GPU within a virtual environment using PyCharm 2025.2.4 on Ubuntu 24.04.3 LTS. The trained model is deployed as a Flask API on an AWS t3.small instance running Ubuntu Server 24.04 LTS, demonstrating efficient serving on lightweight cloud infrastructure.
+
 ---
 
 ## Folder Structure
