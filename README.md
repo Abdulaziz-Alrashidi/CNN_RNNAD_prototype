@@ -5,7 +5,7 @@
 
 This project demonstrates the end-to-end engineering of a convolutional neural network (CNN) trained from scratch on the Tiny ImageNet dataset, which consists of 200 classes with 64×64 images.
 
-The primary goal is **not** to achieve state-of-the-art performance, transfer learning can achieve higher accuracy. Instead, this project focuses on **practical engineering**: from data preprocessing, model design, and experimentation, to deployment on AWS.
+The primary goal is **not** to achieve state-of-the-art performance, transfer learning can achieve higher accuracy. Instead, this project focuses on practical engineering: from data preprocessing, model design, and experimentation, to deployment on AWS.
 
 The current trained model achieves a **validation accuracy of ~42%**, which is consistent with models trained from scratch on Tiny ImageNet. Further experimentation is ongoing, and validation accuracy will be updated as improvements are made.
 
