@@ -19,6 +19,8 @@ The model was trained on an NVIDIA RTX 2080 GPU within a virtual environment usi
 
 For this project, the Tiny ImageNet dataset was used for training. It is publicly available from sources that host it but is not included or redistributed here due to unclear licensing and copyright restrictions. Users should obtain it themselves and follow the ImageNet terms of use.
 
+---
+
 ## Folder Structure
 
 ```
