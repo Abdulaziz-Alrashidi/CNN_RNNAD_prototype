@@ -214,3 +214,7 @@ The logs contain basic comments on experiments. They do not include every minor 
 * Update validation accuracy as experiments progress
 
 ---
+
+## **License**
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
